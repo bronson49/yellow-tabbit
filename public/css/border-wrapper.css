@@ -1,0 +1,179 @@
+.border-wrapper{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+.border-wrapper-top {
+    position: absolute;
+    top: 0;
+    background: #F4F4F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 180px);
+    padding: 17px;
+    margin: 0 90px;
+    border-bottom: 2px solid #333333;
+}
+.border-wrapper-right{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 90px;
+    z-index: 10;
+    height: calc(100% - 130px);
+    margin: 65px 0;
+    border-left: 2px solid #333333;
+}
+.social-icons{
+    position: absolute;
+    bottom: -50px;
+}
+.social-icons li {
+    margin: 15px 20px;
+}
+
+
+
+.border-wrapper-bottom{
+    position: absolute;
+    bottom: 0;
+    background: #F4F4F4;
+    display: flex;
+    font-size: 18px;
+    width: calc(100% - 176px);
+    margin: 0 88px;
+    /*border-top: 2px solid #333333;*/
+}
+.border-wrapper-call {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 65px;
+    font-weight: 600;
+    border: 2px solid #141201;
+}
+.border-wrapper-photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 65px;
+    font-weight: 600;
+    border: 2px solid #141201;
+}
+.border-wrapper-nonActive{
+    background: #141201;
+    color: white;
+}
+
+
+.border-wrapper-left{
+    position: absolute;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 90px;
+    height: calc(100% - 130px);
+    margin: 65px 0;
+    border-right: 2px solid #333333;
+}
+.border-wrapper-left > div {
+    transform: rotate(-90deg);
+}
+
+
+.requestCall {
+    margin: 0 50px;
+    max-width: 0;
+    overflow: hidden;
+    transition: 1s;
+    display: flex;
+}
+.requestCall input[name="phone"]{
+    border: 2px solid #141201;
+    width: 300px;
+    font-size: 14px;
+    padding:0 10px;
+    margin: 5px 60px;
+    background: #F4F4F4;
+    font-family: Montserrat-Regular, sans-serif;
+}
+#submitPhone{
+    display: none;
+}
+.border-wrapper-call:hover .requestCall {
+    max-width: 900px;
+}
+.callArrow {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: #FED731;
+    position: relative;
+    cursor: pointer;
+}
+.callArrow:before {
+    position: absolute;
+    content: '';
+    width: 65px;
+    height: 2px;
+    top: 50%;
+    background: black;
+    right: 10px;
+}
+.callArrow:after {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    top: 20px;
+    right: 10px;
+    border-bottom:  2px solid #141201;
+    border-right:  2px solid #141201;
+    transform: rotate(-45deg);
+}
+
+.scrollDown, .scrollUp {
+    position: relative;
+    cursor: pointer;
+}
+.scrollArrow {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background: #FED731;
+    left: 170%;
+    top: -100%;
+}
+.scrollArrow:before {
+    position: absolute;
+    content: '';
+    width: 65px;
+    height: 2px;
+    top: 50%;
+    background: black;
+    right: 10px;
+}
+.scrollArrow:after {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    top: 25px;
+    right: 10px;
+    border-bottom:  2px solid #141201;
+    border-right:  2px solid #141201;
+    transform: rotate(-45deg);
+}
+
+.scrollDown .scrollArrow {
+    left: -110%;
+    transform: rotate(180deg);
+    transform-origin: left;
+}

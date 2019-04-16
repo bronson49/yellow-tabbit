@@ -7,6 +7,7 @@
     <title>Желтый Кролик</title>
     <link rel="stylesheet" href="js/lib/jquery-ui.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/border-wrapper.css">
 
 </head>
 <body>
@@ -15,7 +16,7 @@
         <img src="img/logo.svg" alt="yellow rabbit">
     </div>
     <div class="border-wrapper-right">
-        <ul>
+        <ul class="social-icons">
             <li>
                 <a href="">
                     <img src="img/Twitter Icon.svg" alt="Twitter">
@@ -50,13 +51,19 @@
     </div>
     <div class="border-wrapper-left">
         <div>
-            <a >Вниз</a>
+            <a class="scrollUp">
+                <div class="scrollArrow"></div>
+                Вверх
+            </a>
         </div>
         <div>
             dots
         </div>
         <div>
-            <a >Вверх</a>
+            <a class="scrollDown">
+                <div class="scrollArrow"></div>
+                Вниз
+            </a>
         </div>
     </div>
 </div>
