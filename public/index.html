@@ -38,14 +38,14 @@
         </ul>
     </div>
     <div class="border-wrapper-bottom">
-        <div class="border-wrapper-call">
+        <div class="border-wrapper-call" id="makeCall">
             <span>Заказать звонок</span>
             <form action="" class="requestCall">
                 <input type="text" name="phone" placeholder="+380 xxx xx xx">
                 <label for="submitPhone" class="callArrow"><input type="submit" value=""  id="submitPhone"></label>
             </form>
         </div>
-        <div class="border-wrapper-photo border-wrapper-nonActive">
+        <div class="border-wrapper-photo border-wrapper-nonActive" id="makePhoto">
             <span>Записаться на фотосессию</span>
             <div class="border-wrapper-appointment">
                 <p>Записаться на сессию</p>
@@ -69,7 +69,9 @@
                        <textarea name="messg" id="messg" ></textarea>
                     </div>
                 </form>
+                <div class="closePhoto"></div>
             </div>
+
         </div>
     </div>
     <div class="border-wrapper-left">
@@ -80,7 +82,10 @@
             </a>
         </div>
         <div>
-            dots
+            <ul class="border-page-list">
+                <li></li>
+                <li></li>
+            </ul>
         </div>
         <div>
             <a class="scrollDown">
