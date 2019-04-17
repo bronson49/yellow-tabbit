@@ -5,7 +5,7 @@
     top: 0;
 }
 .border-wrapper-top {
-    position: absolute;
+    position: fixed;
     top: 0;
     background: #F4F4F4;
     display: flex;
@@ -17,7 +17,7 @@
     border-bottom: 2px solid #333333;
 }
 .border-wrapper-right{
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
     width: 90px;
@@ -37,7 +37,7 @@
 
 
 .border-wrapper-bottom{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     background: #F4F4F4;
     display: flex;
@@ -57,6 +57,7 @@
 }
 .border-wrapper-photo{
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -71,8 +72,9 @@
 
 
 .border-wrapper-left{
-    position: absolute;
+    position: fixed;
     left: 0;
+    bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -176,4 +178,48 @@
     left: -110%;
     transform: rotate(180deg);
     transform-origin: left;
+}
+
+.border-wrapper-appointment{
+    position: absolute;
+    border: 2px solid #141201;
+    bottom: 100%;
+    color: #141201;
+    text-align: center;
+    width: 100%;
+}
+.appointment-form{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    padding:30px 0 50px;
+}
+.appointment-form-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.appointment-form-left label {
+    margin:0 40px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+}
+.appointment-form-left input, .appointment-form-right textarea{
+    border: 2px solid #141201;
+    width: 250px;
+    font-size: 14px;
+    padding:5px 10px;
+    background: #F4F4F4;
+    font-family: Montserrat-Regular, sans-serif;
+}
+.appointment-form-right textarea {
+    height: 100%;
+    margin-left: 30px;
+}
+.appointment-form-right  {
+    padding:0 24px 15px 0;
+    display: flex;
+    align-items: flex-start;
 }

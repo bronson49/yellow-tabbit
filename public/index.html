@@ -11,7 +11,7 @@
 
 </head>
 <body>
-<div class="border-wrapper">
+
     <div class="border-wrapper-top">
         <img src="img/logo.svg" alt="yellow rabbit">
     </div>
@@ -47,6 +47,29 @@
         </div>
         <div class="border-wrapper-photo border-wrapper-nonActive">
             <span>Записаться на фотосессию</span>
+            <div class="border-wrapper-appointment">
+                <p>Записаться на сессию</p>
+                <form action="" name="appointment" class="appointment-form">
+                    <div class="appointment-form-left">
+                        <label for="name">
+                            Имя
+                            <input type="text" name="name" id="name">
+                        </label>
+                        <label for="phone">
+                            Телефон
+                            <input type="text" name="phone" id="phone">
+                        </label>
+                        <label for="mail">
+                            Почта
+                            <input type="text" name="mail" id="mail">
+                        </label>
+                    </div>
+                    <div class="appointment-form-right">
+                       <label for="messg">Комментарий</label>
+                       <textarea name="messg" id="messg" ></textarea>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
     <div class="border-wrapper-left">
@@ -66,7 +89,7 @@
             </a>
         </div>
     </div>
-</div>
+
 
 <main>
     <section class="container">
